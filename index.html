@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Instagram with Bootstrap</title>
+    <script src="https://kit.fontawesome.com/f4901dfe08.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="https://www.instagram.com">
+                    <i class="fa-brands fa-instagram" style="margin-right: 10px; color: black;"></i>
+                    <span class="instagram-text">Instagram</span>
+                    <style>
+                        .instagram-text {
+                            color: black;
+                        }
+                    </style>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#createPostModal">
+                                <span class="btn btn-success">
+                                    Create a new post
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item" href="#">Accesibility</a>
+                                <a class="dropdown-item" href="#">Privacy and Data</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item logout" href="#">Log Out</a>
+                                <style>
+                                    .dropdown-item.logout {
+                                        color: red;
+                                        text-align: left;
+                                    }
+                                </style>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Pills Navigation -->
+        <nav>
+            <div class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <a class="nav-item">
+                    <a class="nav-link active" id="pills-three-images-tab" data-toggle="pill" href="#pills-three-images"
+                        role="tab" aria-controls="pills-three-images" aria-selected="true"><i
+                            class="fa-solid fa-th"></i></a>
+                </a>
+                <a class="nav-item">
+                    <a class="nav-link" id="pills-one-image-tab" data-toggle="pill" href="#pills-one-image" role="tab"
+                        aria-controls="pills-one-image" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+                </a>
+        </nav>
+    </div>
+
+
+    <!-- Pills Content -->
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-three-images" role="tabpanel"
+            aria-labelledby="pills-three-images-tab">
+            <!-- Grid with three cards per row -->
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://static-resources.mirai.com/wp-content/uploads/sites/1738/20220912090223/Cenote-Ik-Kil.jpg"
+                                alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://www.rvc.ac.uk/Media/Default/VetCompass/images/miniature-schanuzer-outside.jpg"
+                                alt="Card image cap">
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://media.iatiseguros.com/wp-content/uploads/2019/09/04012030/es-seguro-viajar-japon-3.jpg"
+                                alt="Card image cap">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-one-image" role="tabpanel" aria-labelledby="pills-one-image-tab">
+            <!-- Grid with one card per row -->
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="card">
+                            <h4 class="card-title"><strong>Cenote!</strong></h4>
+                            <p class="card-text"><small class="text-muted">08/26</small></p>
+                            <img class="card-img-top"
+                                src="https://static-resources.mirai.com/wp-content/uploads/sites/1738/20220912090223/Cenote-Ik-Kil.jpg"">
+                            <div class=" card-body">
+                            <p> <span> <strong>67 Likes</strong></span> </p>
+                            <p2>This is an example of a very good photo that you can post on Instagram.</p2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <h4 class="card-title"><strong>Doggy!</strong></h4>
+                        <img class="card-img-top"
+                            src="https://www.rvc.ac.uk/Media/Default/VetCompass/images/miniature-schanuzer-outside.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p> <span> <strong>67 Likes</strong></span> </p>
+                            <p2>This is an example of a very good photo that you can post on Instagram.</p2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <h3 class="card-title"> <strong> Japan</strong></h3>
+                        <img class="card-img-top"
+                            src="https://media.iatiseguros.com/wp-content/uploads/2019/09/04012030/es-seguro-viajar-japon-3.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p> <span> <strong> 103 Likes</strong></span> </p>
+                            <p2>Summertime!</p2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="createPostModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createPostModalLabel">Create a new post</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="caption">Caption:</label>
+                            <textarea class="form-control" id="caption"
+                                placeholder="Add the caption of your post here"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-secondary"><i class="fa fa-camera"></i></button>
+                        <button type="button" class="btn btn-secondary"><i class="fa fa-map-marker"></i></button>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-left">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
